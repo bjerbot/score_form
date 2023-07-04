@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link 
+            href="https://fonts.googleapis.com/css2?family=Baloo+2&display=swap" 
+            rel="stylesheet"
+        >
+        <link rel="stylesheet" href="./CSS/style.css" />
+        <link rel="stylesheet" href="./CSS/all.css"/>
+        <title>成績計算網站</title>
+    </head>
+    <body>
+        <!-- 開場動畫 -->
+        <section class="animation-wrapper">
+            <section class="animation">
+                <section class="hero">
+                    <img src="./images/math.jpg" alt="math image">
+                </section>
+                
+            </section>
+            <div class="slider"></div>
+        </section>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+            </ul>
+        </nav>
+        <main class="mainPart">
+            <h1 class="title">Grades Input Form</h1>
+            <div class="buttons">
+                <button class="btn sort-descending">降序排列</button>
+                <button class="btn sort-ascending">升序排列</button>
+            </div>
+            <div class="form">
+                <form action="" id="not_delete">
+                    <input placeholder="class category" list="opt" type="text" class="suject adjectForm">
+                    <input placeholder="class number" type="text" class="class_number adjectForm">
+                    <input placeholder="credits" type="number" name="" id="" class="credits adjectForm" min="0">
+                    <select name="" id="0" class="adjectForm">
+                       <option value=""></option>
+                       <option value="A">A</option>
+                       <option value="A-">A-</option>
+                       <option value="B+">B+</option>
+                       <option value="B">B</option>
+                       <option value="B-">B-</option>
+                       <option value="C+">C+</option>
+                       <option value="C">C</option>
+                       <option value="C-">C-</option>
+                       <option value="D+">D+</option>
+                       <option value="D">D</option>
+                       <option value="D-">D-</option>
+                       <option value="F">F</option>
+                    </select>
+                    <button class="delete_form adjectForm">
+                        <i class="fa-solid fa-trash">
+                        </i>
+                    </button>
+                </form>
+                <form action="">
+                    <input placeholder="class category" list="opt" type="text" class="suject adjectForm">
+                    <input placeholder="class number" type="text" class="class_number adjectForm">
+                    <input placeholder="credits" type="number" name="" id="" class="credits adjectForm" min="0">
+                    <select name="" id="1" class="adjectForm">
+                       <option value=""></option>
+                       <option value="A">A</option>
+                       <option value="A-">A-</option>
+                       <option value="B+">B+</option>
+                       <option value="B">B</option>
+                       <option value="B-">B-</option>
+                       <option value="C+">C+</option>
+                       <option value="C">C</option>
+                       <option value="C-">C-</option>
+                       <option value="D+">D+</option>
+                       <option value="D">D</option>
+                       <option value="D-">D-</option>
+                       <option value="F">F</option>
+                    </select>
+                    <button class="delete_form adjectForm">
+                        <i class="fa-solid fa-trash">
+                        </i>
+                    </button>
+                </form>
+                <form action="">
+                    <input placeholder="class category" list="opt" type="text" class="suject adjectForm">
+                    <input placeholder="class number" type="text" class="class_number adjectForm">
+                    <input placeholder="credits" type="number" name="" id="" class="credits adjectForm" min="0">
+                    <select name="" id="2" class="adjectForm">
+                       <option value=""></option>
+                       <option value="A">A</option>
+                       <option value="A-">A-</option>
+                       <option value="B+">B+</option>
+                       <option value="B">B</option>
+                       <option value="B-">B-</option>
+                       <option value="C+">C+</option>
+                       <option value="C">C</option>
+                       <option value="C-">C-</option>
+                       <option value="D+">D+</option>
+                       <option value="D">D</option>
+                       <option value="D-">D-</option>
+                       <option value="F">F</option>
+                    </select>
+                    <button class="delete_form adjectForm">
+                        <i class="fa-solid fa-trash">
+                        </i>
+                    </button>
+                </form>
+            </div>
+            <button class="plus_form" type="button">
+                <i class="fa-solid fa-plus-square"></i>
+            </button>
+            <div class="grade_result">
+                <p>Your semester<br>GPA is</p>
+                <h1 class="gpa_score">0.00</h1>
+            </div>
+            
+        </main>
+        <datalist id="opt">
+            <option value="ACCT">Accounting</option>
+            <option value="ASL">American Sign Language</option>
+            <option value="ANTH">Anthropology</option>
+            <option value="ART">Art</option>
+            <option value="BIOL">Biological Science</option>
+            <option value="BUSM">Business Mgt</option>
+            <option value="CRDEV">Career Development</option>
+            <option value="CHEM">Chemistry</option>
+            <option value="CHIN">Chinese</option>
+            <option value="COMM">Communication Studies</option>
+            <option value="CIS">Computer & Information Sciences</option>
+            <option value="CS">Computer Science</option>
+            <option value="CRMJ">Criminal Justice</option>
+            <option value="ECON">Economics</option>
+            <option value="EDU">Education</option>
+            <option value="ELED">Elementary Education</option>
+            <option value="EMGT">Emergency Management</option>
+            <option value="ENGL">English</option>
+            <option value="EIL">English as Int'l Language</option>
+            <option value="ENTR">Entrepreneurship</option>
+            <option value="EXS">Exercise Sport Science</option>
+            <option value="FILM">Film</option>
+            <option value="FIN">Finance</option>
+            <option value="FORS">Forensic Science</option>
+            <option value="FREN">French</option>
+            <option value="GEOG">Geography</option>
+            <option value="HAWN">Hawaiian</option>
+            <option value="HWST">Hawaiian Studies</option>
+            <option value="HLTH">Health</option>
+            <option value="HIST">History</option>
+            <option value="HEC">Home Economics</option>
+            <option value="HTM">Hospitality Tourism Mgt</option>
+            <option value="HUM">Humanities</option>
+            <option value="IS">Information System</option>
+            <option value="IT">Information Technology</option>
+            <option value="ICS">International Cultural Studies</option>
+            <option value="IPB">Intercultural Peacebuilding</option>
+            <option value="JPN">Japanese</option>
+            <option value="LING">Linguistics</option>
+            <option value="AMOR">Maori</option>
+            <option value="MATH">Mathematics</option>
+            <option value="MUSC">Music</option>
+            <option value="OCEN">Oceanography</option>
+            <option value="PAIS">Pacific Island Studies</option>
+            <option value="PHSC">Physical Science</option>
+            <option value="POSC">Political Science</option>
+            <option value="PSYC">Psychology</option>
+            <option value="PMGT">Public Management</option>
+            <option value="REL">Religion</option>
+            <option value="SCI">Science</option>
+            <option value="SAMN">Samoan</option>
+            <option value="SCED">Secondary Education</option>
+            <option value="SOCW">Social Work</option>
+            <option value="SPAN">Spanish</option>
+            <option value="SPED">Special Education</option>
+            <option value="STDEV">Student Development</option>
+            <option value="TESOL">TESOL</option>
+            <option value="THEA">Theatre</option>
+            <option value="TONG">Tongan</option>
+            <option value="WLNG">World Language</option>
+          </datalist>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/gsap.min.js"></script>
+          <script src="./JS/app.js"></script>
+    </body>
+</html>

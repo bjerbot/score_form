@@ -1,0 +1,175 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+.btn {
+  padding: 0.5rem 0.75rem;
+  border: none;
+  margin: 1rem 0.5rem;
+}
+.btn:hover {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background-color: #272727;
+  font-family: "Baloo 2", cursive;
+}
+body section.animation-wrapper {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background-color: white;
+}
+body section.animation-wrapper section.animation {
+  margin-top: 10vh;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body section.animation-wrapper .hero {
+  width: 100%;
+  height: 0;
+}
+body section.animation-wrapper .hero img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+body section.animation-wrapper .slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: linear-gradient(to right, rgb(144, 144, 144), rgb(0, 0, 0));
+}
+body nav {
+  background-color: #272727;
+  padding: 1rem;
+  box-shadow: 0 8px 6px -6px black;
+}
+body nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+}
+body nav ul li {
+  padding: 0.2rem 0.75rem;
+}
+body nav ul li a {
+  font-size: 1.2rem;
+  color: rgb(255, 255, 255);
+  transition: all 0.5s ease;
+}
+body nav ul li a:hover {
+  color: yellow;
+}
+body main {
+  height: 800px;
+  padding: 1rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+body main h1 {
+  color: white;
+  font-size: 3rem;
+}
+body main div.form {
+  padding: 1rem 1rem;
+}
+body main div.form form .adjectForm {
+  height: 2rem;
+  padding: 0rem 0.5rem;
+}
+body main div.form form input, body main div.form form select {
+  font-size: 1.05rem;
+  border: 0.25px solid rgb(39, 39, 39);
+  border-radius: 0.25rem;
+  margin: 0.35rem;
+}
+body main div.form form .credits {
+  width: 12%;
+}
+body main div.form form button {
+  background-color: #272727;
+  border: none;
+  cursor: pointer;
+}
+body main div.form form button i {
+  font-size: 1.25rem;
+  pointer-events: none;
+  color: white;
+}
+body main button.plus_form {
+  width: 2.5rem;
+  margin: 1rem;
+  background-color: #272727;
+  cursor: pointer;
+  border: none;
+}
+body main button.plus_form i {
+  color: white;
+  font-size: 2.5rem;
+}
+body main div.grade_result {
+  border: 3px solid red;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  color: white;
+  margin: 1rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  animation-name: borderColor;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  animation-direction: none;
+}
+body main div.grade_result p {
+  font-size: 1.15rem;
+}
+
+@keyframes borderColor {
+  0% {
+    border: 3px solid red;
+  }
+  33% {
+    border: 3px solid green;
+  }
+  66% {
+    border: 3px solid yellow;
+  }
+  100% {
+    border: 3px solid red;
+  }
+}
+@keyframes ScaleUp {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+@keyframes ScaleDown {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0);
+  }
+}/*# sourceMappingURL=style.css.map */
